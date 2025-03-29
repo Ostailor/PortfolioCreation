@@ -54,7 +54,7 @@ This project is a Flask-based web application that computes the optimal portfoli
 - Python (Flask, NumPy, Pandas)
 - Bootstrap 5 for UI
 - Jinja2 templating
-- Financial APIs for data (e.g., yfinance, if used in `portfolio.py`)
+- Financial APIs for data (e.g., yfinance)
 
 ## Contributing
 
