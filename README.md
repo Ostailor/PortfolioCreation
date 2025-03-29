@@ -2,9 +2,9 @@
 
 This Flask web application retrieves historical stock prices from Yahoo Finance for a list of tickers, computes the annualized expected returns and covariance matrix, and then solves for the optimal portfolio allocation for _N_ risky assets with a risk-free asset using the following formulas:
 
-\[
+$$
 \mathbf{w}^* = \frac{1}{\gamma}\,\Sigma^{-1}\,\bigl(\boldsymbol{\mu} - r_f\,\mathbf{1}\bigr),
-\]
+$$
 \[
 c^* = 1 - \sum_{i=1}^N w_i^*,
 \]
