@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Optimal Portfolio Results</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="container my-5">
+    <h1>Optimal Portfolio Results</h1>
+    <h2>Risky Assets Allocation</h2>
+    <ul class="list-group mb-4">
+        {% for ticker, weight in weights_with_tickers %}
+        <li class="list-group-item">
+            <strong>{{ ticker }}:</strong> {{ weight|round(4) }}
+        </li>
+        {% endfor %}
+    </ul>
+    <h2>Risk-Free Allocation</h2>
+    <p class="lead">c* (Risk-Free Fraction): {{ c_star|round(4) }}</p>
+    <h2>Portfolio Metrics</h2>
+    <ul class="list-group mb-4">
+        <li class="list-group-item"><strong>Portfolio Expected Return (mu*):</strong> {{ mu_p_star|round(4) }}</li>
+        <li class="list-group-item"><strong>Portfolio Standard Deviation (sigma*):</strong> {{ sigma_p_star|round(4) }}</li>
+    </ul>
+    <a href="/" class="btn btn-secondary">Back</a>
+</body>
+</html>
